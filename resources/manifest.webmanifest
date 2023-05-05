@@ -1,0 +1,19 @@
+{
+  "icons": [
+    {
+      "src": "resources/img/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "resources/img/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "resources/img/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ]
+}
