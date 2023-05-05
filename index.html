@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="resources/img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon-32x32.png">
-  <link rel="manifest" href="/resources/site.webmanifest">
+  <link rel="manifest" href="./resources/manifest.webmanifest">
   <script src="https://kit.fontawesome.com/fa872d00e7.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -27,7 +27,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
   <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
     <div class="container"> <a class="logo" href="#home"> <img class="website-logo"
-          src="./resources/img/gpmlogoo (1).png" alt="Website logo"> </a> <button class="navbar-toggler" type="button"
+          src="./resources/img/gpmLOGOO (1).png" alt="Website logo"> </a> <button class="navbar-toggler" type="button"
         data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
         aria-expanded="false" aria-label="Toggle navigation"> <i class="burger-menu fa fa-bars"></i> </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -39,12 +39,19 @@
   </nav>
   <header id="home">
     <div class="hero-img">
-      <div class="social-icons"> <a class="iconn" href="https://www.facebook.com/" target="_blank"><img
-            src="./resources/img/facebook-icon.png" alt="Instagram" rel="noopener noreferrer"
-            onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}"></a>
-        <a class="iconn" href="https://www.instagram.com/" target="_blank"><img src="./resources/img/instagram-icon.png"
+      <div class="social-icons">
+        <a class="iconn" href="https://www.google.com/search?q=gospodaprzymlynie&oq=gospodaprzymlynie&aqs=chrome.0.69i59j46i13i175i199i512j0i13i512l2j69i60l4.1809j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img
+            src="./resources/img/google.svg" alt="Instagram" rel="noopener noreferrer"
+            onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}">
+          </a>
+         <a class="iconn" href="https://www.facebook.com/" target="_blank"><img
+            src="./resources/img/facebook.svg" alt="Instagram" rel="noopener noreferrer"
+            onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}">
+          </a>
+        <a class="iconn" href="https://www.instagram.com/" target="_blank"><img src="./resources/img/instagram.svg"
             alt="Instagram" rel="noopener noreferrer"
-            onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='ig://page/gospodaprzymlynie'; return false;}"></a>
+            onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='ig://page/gospodaprzymlynie'; return false;}">
+        </a>
       </div>
       <div class="hero-shadow"></div>
       <div class="hero-text">
@@ -371,31 +378,92 @@
         </div>
       </div>
       <div class="gallery">
-        <figure class="gallery-item"> <img src="./resources/img/gallery-1.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-2.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-3.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-4.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-5.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-6.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-7.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-8.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-9.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-10.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-11.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-        <figure class="gallery-item"> <img src="./resources/img/gallery-12.webp" alt="Obrazek z przepysznym daniem">
-        </figure>
-      </div>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-12.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+            <!-- <figcaption>Caption</figcaption> -->
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-1.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-2.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-3.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-4.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-5.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-6.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-7.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-8.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-9.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-10.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./resources/img/gallery-11.webp"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+        </div>
     </section>
     <section id="contact" class="contact-section">
       <div class="contact-container">
@@ -403,8 +471,7 @@
           <div class="localization-note">
             <h2>Jesteśmy tutaj <i class="fa-regular fa-hand-point-down"></i></h2>
             <div class="contact">
-              <p class="info info-availability">Jesteśmy dla Was <strong>codziennie</strong> od 13:00 do 19:00<br>w
-                dniach 24.06 - 27.08</p>
+              <p class="info info-availability">Jesteśmy dla Was otwarci od 24.06, do 28.08 w godzinach 13:00 - 19:00
               <p class="note"><strong>Adres:</strong> Gdańska 5, 82-103 Jantar</p>
               <p class="note"><strong>Telefon:</strong> <a href="tel: 501232191">+48 501 232 191</a></p>
             </div>
