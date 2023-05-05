@@ -1,9 +1,72 @@
-*,
-:after,
-:before {
-  box-sizing: inherit;
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.testimonials-section {
+  background-color: #fff5f4;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonials-section figure {
   margin: 0;
+}
+.testimonials-section .testimonials-container {
+  padding: 9.6rem;
+}
+.testimonials-section .testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonials-section .testimonial-review {
+  width: 16rem;
+  margin-bottom: 1.2rem;
+}
+.testimonials-section .testimonial-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+}
+.testimonials-section .testimonial-name {
+  font-size: 1.6rem;
+  color: #717171;
+}
+.testimonials-section .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.testimonials-section .gallery-item img {
+  display: inline;
+  width: 100%;
+  height: auto;
+  transition: all 0.4s;
+}
+.testimonials-section .gallery-item {
+  overflow: hidden;
+}
+.testimonials-section .gallery-item img:hover {
+  transform: scale(1.1);
+}
+*,
+*::before,
+*::after {
   padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 html {
   box-sizing: border-box;
@@ -11,18 +74,18 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Montserrat, sans-serif;
-  line-height: 1;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
 }
 .wrapper {
-  margin: 0 auto;
   max-width: 114rem;
+  margin: 0 auto;
 }
 .subheading {
-  color: #d03a20;
   font-size: 2rem;
   font-weight: 700;
+  color: #d03a20;
 }
 .heading-secondary {
   font-size: 3.6rem;
@@ -30,29 +93,14 @@ body {
   letter-spacing: -0.2px;
   margin-top: 1.6rem;
 }
-.about-section {
-  padding: 10rem 0;
-}
-.about-section .about-title {
-  font-size: 4.4rem;
-  text-align: center;
-}
-.about-section .about-container {
-  margin-top: 5rem;
-  padding: 3rem;
-}
-.about-section .about-container .about-description {
-  font-size: 1.8rem;
-  line-height: 1.8;
-}
 .contact-section {
   padding-top: 15rem;
 }
 .contact-section .localization {
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 .contact-section .localization .localization-note h2 {
   font-size: 4.4rem;
@@ -65,63 +113,225 @@ body {
   padding-bottom: 4rem;
 }
 .contact-section .localization .localization-note .contact .info {
-  font-size: 1.8rem;
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.8rem;
 }
 .contact-section .localization .localization-note .contact .note {
   font-size: 1.6rem;
 }
 .contact-section .localization .map .map-frame {
-  align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   max-width: 100%;
 }
 form {
-  align-items: center;
-  background-color: #f2f2f2;
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 5rem auto;
   max-width: 80rem;
   padding: 4rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
 }
 label {
-  color: #333;
   display: block;
-  font-size: 1.8rem;
-  font-weight: 700;
   margin-bottom: 1rem;
+  font-weight: 700;
+  color: #333;
+  font-size: 1.8rem;
 }
 input[type='mail'],
 textarea {
-  background-color: #e6e6e6;
-  border: none;
-  border-radius: 0.8rem;
-  color: #333;
-  font-size: 1.8rem;
-  margin-bottom: 3rem;
-  padding: 2rem;
   width: 100%;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  color: #333;
 }
 textarea {
-  height: 18rem;
   resize: vertical;
+  height: 18rem;
 }
 input[type='submit'] {
-  background-color: #3282dd;
-  border: none;
-  border-radius: 0.8rem;
+  background-color: rgb(50, 130, 221);
   color: #fff;
-  cursor: pointer;
-  font-size: 2rem;
+  border: none;
   padding: 2rem 4rem;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 input[type='submit']:hover {
-  background-color: #205694;
+  background-color: rgb(32, 86, 148);
+}
+nav {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  z-index: 1;
+  transition: background-color 0.6s;
+}
+nav .website-logo {
+  margin-top: 1rem;
+  width: 24rem;
+  height: auto;
+}
+nav .navbar-nav .nav-link.active {
+  color: tomato;
+}
+nav .nav-link {
+  color: #fff;
+  margin: 1rem;
+}
+nav .nav-link:hover {
+  color: tomato;
+}
+nav .burger-menu {
+  padding: 1rem;
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+header {
+  color: #fff;
+}
+header h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.7px;
+}
+header p {
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+}
+header span {
+  color: tomato;
+}
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url(../resources/img/front.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  height: 100vh;
+  z-index: 5;
+}
+header button a {
+  text-decoration: none;
+  color: tomato;
+}
+header .btn:hover {
+  color: tomato;
+}
+header .btn {
+  text-transform: uppercase;
+  margin-top: 2.8rem;
+  padding: 0.8rem;
+  font-size: 2rem;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  font-size: 4.8rem;
+  color: #fff;
+}
+.menu-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.menu-container .fish-title {
+  color: #444;
+  font-weight: 600;
+}
+.menu-container .menu-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #3282dd;
+  padding: 4rem 0 0 0;
+}
+.menu-container .menu-list {
+  margin-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: -0.6px;
+  list-style: none;
+  padding: 0;
+}
+.menu-container .menu-list .prices {
+  font-size: 1.8rem;
+  color: #444;
+  font-weight: 600;
+  padding-top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-container .menu-list .prices .special-price {
+  color: #1f7f32;
+}
+.menu-container .menu-list .prices p {
+  font-weight: 700;
+}
+.menu-container .meal-with-info {
+  margin-top: 1.6rem;
+}
+.menu-container .meal-with-info .stack span {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #575757;
+}
+.menu-container .soups .soup-price {
+  font-size: 1.8rem;
+  color: #444;
+  font-weight: 600;
+}
+.menu-container .soups span {
+  font-size: 1.6rem;
+  color: #575757;
+}
+.menu-container .icon {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-bottom: 0.5rem;
+}
+.about-section {
+  padding: 10rem 0;
+}
+.about-section .about-title {
+  font-size: 4.4rem;
+  text-align: center;
+}
+.about-section .about-container {
+  padding: 3rem;
+  margin-top: 5rem;
+}
+.about-section .about-container .about-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 footer {
   background-color: #fff5f4;
@@ -140,8 +350,8 @@ footer p {
 }
 footer ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 footer ul li {
   margin-bottom: 1rem;
@@ -166,180 +376,18 @@ footer ul.social-links li a:hover {
   transform: translateY(-0.3rem);
 }
 .links {
-  font-size: 1.6rem;
   line-height: 1.6;
-}
-footer-logo {
-  margin-bottom: 2rem;
-  width: 3rem;
-}
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-.grid,
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-nav {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  transition: background-color 0.6s;
-  z-index: 1;
-}
-nav .website-logo {
-  height: auto;
-  margin-top: 1rem;
-  width: 24rem;
-}
-nav .navbar-nav .nav-link.active {
-  color: tomato;
-}
-nav .nav-link {
-  color: #fff;
-  margin: 1rem;
-}
-nav .nav-link:hover {
-  color: tomato;
-}
-nav .burger-menu {
-  color: #fff;
-  font-size: 3rem;
-  outline: none;
-  padding: 1rem;
-  text-decoration: none;
-}
-header {
-  color: #fff;
-}
-header h1 {
-  font-size: 3rem;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-}
-header p {
-  font-size: 2.2rem;
-  margin-top: 0.5rem;
-}
-header span {
-  color: tomato;
-}
-header .hero-img {
-  background-attachment: fixed;
-  background-image: url(../resources/img/front.jpg);
-  background-position: 50%;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  z-index: 0;
-}
-header .hero-shadow {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: -10;
-}
-header .hero-text {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
-  z-index: 5;
-}
-header button a {
-  color: tomato;
-  text-decoration: none;
-}
-header .btn:hover {
-  color: tomato;
-}
-header .btn {
-  font-size: 2rem;
-  margin-top: 2.8rem;
-  padding: 0.8rem;
-  text-transform: uppercase;
-}
-header .fa-chevron-down {
-  bottom: 2rem;
-  color: #fff;
-  font-size: 4.8rem;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-}
-.menu-section {
-  padding-bottom: 10rem;
-  padding-top: 10rem;
-}
-.menu-container .fish-title {
-  color: #444;
-  font-weight: 600;
-}
-.menu-container .menu-title {
-  color: #3282dd;
-  font-size: 4rem;
-  font-weight: 700;
-  padding: 4rem 0 0;
-}
-.menu-container .menu-list {
-  font-size: 2rem;
-  letter-spacing: -0.6px;
-  list-style: none;
-  margin-top: 1rem;
-  padding: 0;
-}
-.menu-container .menu-list .prices {
-  color: #444;
-  display: flex;
-  font-size: 1.8rem;
-  font-weight: 600;
-  justify-content: space-between;
-  padding-top: 1.4rem;
-}
-.menu-container .menu-list .prices .special-price {
-  color: #1f7f32;
-}
-.menu-container .menu-list .prices p {
-  font-weight: 700;
-}
-.menu-container .meal-with-info {
-  margin-top: 1.6rem;
-}
-.menu-container .meal-with-info .stack span {
-  color: #575757;
-  font-size: 1.4rem;
-  font-style: italic;
-}
-.menu-container .soups .soup-price {
-  color: #444;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-.menu-container .soups span {
-  color: #575757;
   font-size: 1.6rem;
 }
-.menu-container .icon {
-  height: 3.4rem;
-  margin-bottom: 0.5rem;
-  width: 3.4rem;
+footer img {
+  margin-bottom: 2rem;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   .testimonials-section .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
   .menu-container {
-    padding: 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   .menu-container .br {
     display: block;
@@ -354,21 +402,21 @@ header .fa-chevron-down {
     font-size: 1.4rem;
     line-height: 1.4;
   }
-  .menu-container .menu-list .fish-title,
   .menu-container .menu-list .prices,
+  .menu-container .menu-list .fish-title,
   .menu-container .menu-list .soup-price {
     font-size: 1.4rem;
   }
   .menu-container .meal-with-info .stack span {
-    color: #898989;
-    font-size: 1.2rem;
     font-style: italic;
+    font-size: 1.2rem;
+    color: #898989;
   }
   .localization {
-    align-items: center;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
+    flex-direction: column;
   }
   .localization .localization-note h2 {
     font-size: 4.4rem;
@@ -381,9 +429,9 @@ header .fa-chevron-down {
     padding-bottom: 4rem;
   }
   .localization .localization-note .contact .info {
-    padding: 0 1rem 1.5rem;
     text-align: left;
     text-transform: uppercase;
+    padding: 0 1rem 1.5rem 1rem;
   }
   .localization .localization-note .contact .note {
     font-size: 1.6rem;
@@ -401,7 +449,7 @@ header .fa-chevron-down {
     display: block;
   }
   .menu-container {
-    padding: 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   .menu-container .br {
     display: block;
@@ -413,13 +461,13 @@ header .fa-chevron-down {
     font-size: 3.2rem;
   }
   .menu-container .menu-list {
+    margin-top: 1rem;
     font-size: 1.7rem;
     line-height: 1.8;
     list-style: none;
-    margin-top: 1rem;
   }
-  .menu-container .menu-list .fish-title,
   .menu-container .menu-list .prices,
+  .menu-container .menu-list .fish-title,
   .menu-container .menu-list .soup-price {
     font-size: 1.6rem;
   }
@@ -427,12 +475,12 @@ header .fa-chevron-down {
     margin-top: 1.6rem;
   }
   .menu-container .menu-list .meal-with-info span {
-    color: #898989;
     font-size: 1.2rem;
+    color: #898989;
   }
   .menu-container .menu-list .meal-with-info .stack {
-    letter-spacing: -0.5px;
     line-height: 0.9;
+    letter-spacing: -0.5px;
   }
   .about-section .about-container .about-description {
     font-size: 1.8em;
@@ -440,8 +488,8 @@ header .fa-chevron-down {
     padding: 1.2rem;
   }
   .testimonials-section .gallery {
-    gap: 1.2rem;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
   }
 }
 @media (min-width: 487px) and (max-width: 676px) {
@@ -449,7 +497,7 @@ header .fa-chevron-down {
     display: block;
   }
   .menu-container {
-    padding: 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   .menu-container .br {
     display: block;
@@ -458,21 +506,21 @@ header .fa-chevron-down {
     font-size: 3.2rem;
   }
   .menu-container .menu-list {
+    margin-top: 1rem;
     font-size: 1.7rem;
     line-height: 1.8;
     list-style: none;
-    margin-top: 1rem;
   }
   .menu-container .menu-list .meal-with-info {
     margin-top: 1.6rem;
   }
   .menu-container .menu-list .meal-with-info span {
-    color: #898989;
     font-size: 1.2rem;
+    color: #898989;
   }
   .menu-container .menu-list .meal-with-info .stack {
-    letter-spacing: -0.5px;
     line-height: 0.9;
+    letter-spacing: -0.5px;
   }
   .about-section .about-container .about-description {
     font-size: 1.8em;
@@ -485,27 +533,27 @@ header .fa-chevron-down {
     display: block;
   }
   .menu-container {
-    padding: 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   .menu-container .br {
     display: block;
   }
   .menu-container .menu-list {
+    margin-top: 1rem;
     font-size: 2.2rem;
     line-height: 1.6;
     list-style: none;
-    margin-top: 1rem;
   }
   .menu-container .menu-list .meal-with-info {
     margin-top: 1.6rem;
   }
   .menu-container .menu-list .meal-with-info span {
-    color: #898989;
     font-size: 1.2rem;
+    color: #898989;
   }
   .menu-container .menu-list .meal-with-info .stack {
-    letter-spacing: -0.5px;
     line-height: 0.9;
+    letter-spacing: -0.5px;
   }
   .testimonials-section .testimonials {
     grid-template-columns: 1fr;
@@ -515,14 +563,16 @@ header .fa-chevron-down {
   footer {
     text-align: center;
   }
-  footer h5,
+  footer h5 {
+    margin-top: 3rem;
+  }
   footer ul {
     margin-top: 3rem;
   }
   footer ul.social-links li {
     display: block;
-    margin-bottom: 1rem;
     margin-right: 0;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 944px) {
@@ -540,62 +590,12 @@ header .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .social-icons {
-  left: 0;
   position: absolute;
   top: 80%;
+  left: 0;
   transform: translateY(-50%);
 }
 .social-icons .iconn {
   display: block;
   margin-bottom: 10px;
-}
-.testimonials-section {
-  align-items: center;
-  background-color: #fff5f4;
-  display: grid;
-  grid-template-columns: 55fr 45fr;
-}
-.testimonials-section figure {
-  margin: 0;
-}
-.testimonials-section .testimonials-container {
-  padding: 9.6rem;
-}
-.testimonials-section .testimonials {
-  -moz-column-gap: 8rem;
-  column-gap: 8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 4.8rem;
-}
-.testimonials-section .testimonial-review {
-  margin-bottom: 1.2rem;
-  width: 16rem;
-}
-.testimonials-section .testimonial-text {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin-bottom: 1.4rem;
-}
-.testimonials-section .testimonial-name {
-  color: #717171;
-  font-size: 1.6rem;
-}
-.testimonials-section .gallery {
-  display: grid;
-  gap: 1.6rem;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1.6rem;
-}
-.testimonials-section .gallery-item img {
-  display: inline;
-  height: auto;
-  transition: all 0.4s;
-  width: 100%;
-}
-.testimonials-section .gallery-item {
-  overflow: hidden;
-}
-.testimonials-section .gallery-item img:hover {
-  transform: scale(1.1);
 }
