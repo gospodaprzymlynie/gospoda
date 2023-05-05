@@ -1,0 +1,92 @@
+@use 'base';
+
+nav {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  z-index: 1;
+  transition: background-color 0.6s;
+}
+nav .website-logo {
+  margin-top: 1rem;
+  width: 24rem;
+  height: auto;
+}
+nav .navbar-nav .nav-link.active {
+  color: tomato;
+}
+nav .nav-link {
+  color: #fff;
+  margin: 1rem;
+}
+nav .nav-link:hover {
+  color: tomato;
+}
+nav .burger-menu {
+  padding: 1rem;
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+header {
+  color: #fff;
+}
+header h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.7px;
+}
+header p {
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+}
+header span {
+  color: tomato;
+}
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url(../resources/img/front.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  height: 100vh;
+  z-index: 5;
+}
+header button a {
+  text-decoration: none;
+  color: tomato;
+}
+header .btn:hover {
+  color: tomato;
+}
+header .btn {
+  text-transform: uppercase;
+  margin-top: 2.8rem;
+  padding: 0.8rem;
+  font-size: 2rem;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  font-size: 4.8rem;
+  color: #fff;
+}
