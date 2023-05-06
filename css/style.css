@@ -217,7 +217,7 @@ header span {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url(../resources/img/front.jpg);
+  background-image: url(../resources/img/front.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

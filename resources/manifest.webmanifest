@@ -6,8 +6,8 @@
       "sizes": "180x180"
     },
     {
-      "src": "resources/img/favicon-16x16.png",
-      "type": "image/png",
+      "src": "resources/img/favicon-16x16.webp",
+      "type": "image/webp",
       "sizes": "16x16"
     },
     {
