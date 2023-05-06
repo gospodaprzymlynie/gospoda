@@ -179,7 +179,7 @@ nav {
 }
 nav .website-logo {
   margin-top: 1rem;
-  width: 24rem;
+  width: 20rem;
   height: auto;
 }
 nav .navbar-nav .nav-link.active {
@@ -380,7 +380,8 @@ footer ul.social-links li a:hover {
   font-size: 1.6rem;
 }
 footer img {
-  margin-bottom: 2rem;
+  width: 30rem;
+  height: auto;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   .testimonials-section .gallery {
@@ -529,11 +530,11 @@ footer img {
   }
 }
 @media (max-width: 677px) {
+  .menu-section {
+    padding: 0rem 1rem 0rem 1rem;
+  }
   .br {
     display: block;
-  }
-  .menu-container {
-    padding: 0 1rem 0 1rem;
   }
   .menu-container .br {
     display: block;
@@ -575,12 +576,18 @@ footer img {
     margin-bottom: 1rem;
   }
 }
+@media (min-width: 945px) and (max-width: 1200px) {
+  .testimonials-section .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 944px) {
   .testimonials-section {
     grid-template-columns: 1fr;
   }
   .testimonials-section .gallery {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .br {
@@ -594,8 +601,10 @@ footer img {
   top: 80%;
   left: 0;
   transform: translateY(-50%);
+  color: #fff;
 }
 .social-icons .iconn {
   display: block;
   margin-bottom: 10px;
+  font-size: 2.5rem;
 }
