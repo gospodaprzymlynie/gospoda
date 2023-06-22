@@ -1,423 +1,703 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="ryba, smaczna ryba, ryba z frytkami, piwo, jedzenie, jantar ryba, jantar restauracja z rybami, restauracje jantar, Restauracje Jantar, w Jantarze, w jantarze, Przy Młynie, PRZY MŁYNIE, obiad domowy jantar, obiad domowy, obiad Jantar, Jantar. Jantar nocleg "
+    />
+    <meta
+      name="description"
+      content="'Przy Młynie', to miejsce serwujące gościom pyszne i tradycyjne obiady domowe. Istniejąca od 1995 restauracja w swojej historii gościła tysiące klientów. Być w Jantarze i nie przyjść do Gospody na obiad, to tak jakby wcale tu nie przyjechać!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="resources/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/img/favicon-16x16.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/img/favicon-32x32.png"
+    />
+    <link rel="manifest" href="./resources/manifest.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/fa872d00e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Gospoda "PRZY MŁYNIE"</title>
+    <script src="./js/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"
-    content="ryba, smaczna ryba, ryba z frytkami, piwo, jedzenie, jantar ryba, jantar restauracja z rybami, restauracje jantar, Restauracje Jantar, w Jantarze, w jantarze, Przy Młynie, PRZY MŁYNIE, obiad domowy jantar, obiad domowy, obiad Jantar, Jantar. Jantar nocleg ">
-  <meta name="description"
-    content="'Przy Młynie', to miejsce serwujące gościom pyszne i tradycyjne obiady domowe. Istniejąca od 1995 restauracja w swojej historii gościła tysiące klientów. Być w Jantarze i nie przyjść do Gospody na obiad, to tak jakby wcale tu nie przyjechać!">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="resources/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon-16x16.webp">
-  <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon-32x32.png">
-  <link rel="manifest" href="./resources/manifest.webmanifest">
-  <script src="https://kit.fontawesome.com/fa872d00e7.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Gospoda "PRZY MŁYNIE"</title>
-  <script src="./js/script.js" defer></script>
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-  <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
-    <div class="container"> <a class="logo" href="#home"> <img class="website-logo"
-          src="./resources/img/gpmlogoo.webp" alt="Website logo"> </a> <button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation"> <i class="burger-menu fa fa-bars"></i> </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto"> <a class="nav-link active" href="#home">Home</a> <a class="nav-link"
-            href="#menu">Menu</a> <a class="nav-link" href="#testimonials">Galeria</a> <a class="nav-link"
-            href="#contact">Kontakt</a> <a class="nav-link" href="#about">O nas</a> </div>
-      </div>
-    </div>
-  </nav>
-  <header id="home">
-    <div class="hero-img">
-      <div class="social-icons">
-        <a class="iconn" href="https://www.google.com/search?q=gospodaprzymlynie&oq=gospodaprzymlynie&aqs=chrome.0.69i59j46i13i175i199i512j0i13i512l2j69i60l4.1809j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img
-            src="./resources/img/google.svg" alt="Google icon" rel="noopener noreferrer"
-            onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}">
-          </a>
-         <a class="iconn" href="https://www.facebook.com/gospodaprzymlynie" target="_blank"><img
-            src="./resources/img/facebook.svg" alt="Facebook Icon" rel="noopener noreferrer"
-            onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}">
-          </a>
-      </div>
-      <div class="hero-shadow"></div>
-      <div class="hero-text">
-        <h1>Przez Żołądek, do <span>serca</span></h1>
-        <p>Pyszne tradycyjne obiady od 1995 roku</p><button type="button" class="btn btn-outline-light"><a
-            href="#menu">Nasze menu</a></button>
-      </div><a href="#menu"><i class="fas fa-chevron-down"></i></a>
-    </div>
-  </header>
-  <main>
-    <section id="menu" class="menu-section wrapper">
-      <div class="menu-container">
-        <div class="fishes">
-          <h2 class="menu-title menu-fishes-title"> Ryby <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-fish-christianity" width="24" height="24" viewBox="0 0 24 24"
-              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M22 7s-5.646 10 -12.308 10c-3.226 .025 -6.194 -1.905 -7.692 -5c1.498 -3.095 4.466 -5.025 7.692 -5c6.662 0 12.308 10 12.308 10">
-              </path>
-            </svg> </h2>
-          <div class="menu-list menu-fishes-list">
-            <div class="prices"> <span class="fish-title">Filet z sandacza (150 g) z frytkami<br class="br"> i
-                surówką</span>
-              <p class="special-price">44 PLN</p>
-            </div>
-            <div class="prices"> <span class="fish-title"> Filet z dorsza (150 g) z frytkami<br class="br"> i surówką
-              </span>
-              <p class="special-price">44 PLN</p>
-            </div>
-            <div class="prices"> <span class="fish-title"> Filet z miruny (150 g) z frytkami<br class="br"> i z surówką
-              </span>
-              <p class="special-price">42 PLN</p>
-            </div>
-            <div class="prices"> <span class="fish-title"> Pstrąg w całości (300 g) z frytkami<br class="br"> i surówką
-              </span>
-              <p class="special-price">42 PLN</p>
-            </div>
-          </div>
-        </div>
-      <div class="meat">
-  <h2 class="menu-title menu-meat-title">
-    Mięsiwo
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-meat"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      stroke-width="2"
-      stroke="currentColor"
-      fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821"
-      ></path>
-      <path
-        d="M5.904 18.596c2.733 2.734 5.9 4 7.07 2.829c1.172 -1.172 -.094 -4.338 -2.828 -7.071c-2.733 -2.734 -5.9 -4 -7.07 -2.829c-1.172 1.172 .094 4.338 2.828 7.071z"
-      ></path>
-      <path d="M7.5 16l1 1"></path>
-      <path
-        d="M12.975 21.425c3.905 -3.906 4.855 -9.288 2.121 -12.021c-2.733 -2.734 -8.115 -1.784 -12.02 2.121"
-      ></path>
-    </svg>
-  </h2>
-  <div class="menu-list menu-meats-list">
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p class="food">
-            De volaille z frytkami<br class="br" />
-            i zestawem surówek
-          </p>
-          <p class="special-price">39 PLN</p>
-        </div>
-        <span>Kotlet z piersi kurczaka zawijany z serem i masłem (250)</span>
-      </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p class="food">Chrupiący z MŁYNA z frytkami</p>
-          <p class="special-price">32 PLN</p>
-        </div>
-        <span
-          >Filet z kurczaka (150 g) w chrupiącej panierce <br class="br" />
-          z sosem czosnkowym</span
+      <div class="container">
+        <a class="logo" href="#home">
+          <img
+            class="website-logo"
+            src="./resources/img/gpmlogoo.webp"
+            alt="Website logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-      </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p class="food">
-            Kotlet schabowy z frytkami<br class="br" />
-            i zestawem surówek
-          </p>
-          <p class="special-price">37 PLN</p>
+          <i class="burger-menu fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#menu">Menu</a>
+            <a class="nav-link" href="#testimonials">Galeria</a>
+            <a class="nav-link" href="#contact">Kontakt</a>
+            <a class="nav-link" href="#about">O nas</a>
+          </div>
         </div>
-        <span>Kotlet 150g. Do wyboru frytki, ziemniaki</span>
       </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p class="food">
-            Pierś z kurczaka z frytkami<br class="br" />
-            i zestawem surówek
-          </p>
-          <p class="special-price">37 PLN</p>
+    </nav>
+    <header id="home">
+      <div class="hero-img">
+        <div class="social-icons">
+          <a
+            class="iconn"
+            href="https://www.google.com/search?q=gospodaprzymlynie&oq=gospodaprzymlynie&aqs=chrome.0.69i59j46i13i175i199i512j0i13i512l2j69i60l4.1809j0j7&sourceid=chrome&ie=UTF-8"
+            target="_blank"
+            ><img
+              src="./resources/img/google.svg"
+              alt="Google icon"
+              rel="noopener noreferrer"
+              onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}"
+            />
+          </a>
+          <a
+            class="iconn"
+            href="https://www.facebook.com/gospodaprzymlynie"
+            target="_blank"
+            ><img
+              src="./resources/img/facebook.svg"
+              alt="Facebook Icon"
+              rel="noopener noreferrer"
+              onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}"
+            />
+          </a>
         </div>
-        <span>Kotlet 130g. Do wyboru frytki, ziemniaki</span>
-      </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p class="food">Kurczak burger z frytkami</p>
-          <p class="special-price">28 PLN</p>
+        <div class="hero-shadow"></div>
+        <div class="hero-text">
+          <h1>Przez Żołądek, do <span>serca</span></h1>
+          <p>Pyszne tradycyjne obiady od 1995 roku</p>
+          <button type="button" class="btn btn-outline-light">
+            <a href="#menu">Nasze menu</a>
+          </button>
         </div>
-        <span
-          >sałata, ogórek konserwowy, pomidor,<br class="br" />
-          cebula czerwona, sos: majonez, ketchup,<br />zioła prowansalskie, sól,
-          pieprz</span
-        >
+        <a href="#menu"><i class="fas fa-chevron-down"></i></a>
       </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p class="food">Rybny burger z frytkami</p>
-          <p class="special-price">32 PLN</p>
-        </div>
-        <span
-          >Sałata, pomidor, cebula, sos: majonez, <br class="br" />
-          natka pietruszki, koper,<br class="br" />
-          szczypior, ogórki</span
-        >
-      </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p class="food">Golonka SZEFA z pieczywem</p>
-          <p class="special-price">37 PLN</p>
-        </div>
-        <span
-          >Golonka (500 g) gotowana peklowana podawana z <br class="br" />
-          musztardą i chrzanem
-        </span>
-      </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p>
-            Pieczeń z karkówki z ziemniakami <br class="br" />
-            i zestawem surówek
-          </p>
-          <p class="special-price">37 PLN</p>
-        </div>
-        <span>Pieczeń 130g</span>
-      </div>
-    </div>
-    <div class="meal-with-info">
-      <div class="stack">
-        <div class="prices">
-          <p>
-            Kotlet mielony z ziemniakami<br class="br" />
-            i buraczkami
-          </p>
-          <p class="special-price">32 PLN</p>
-        </div>
-        <span>Kotlet mielony 120g.</span>
-      </div>
-    </div>
-  </div>
-</div>
+    </header>
+    <main>
+      <section id="menu" class="menu-section wrapper">
+        <div class="menu-container">
+          <div class="fishes">
+            <h2 class="menu-title menu-fishes-title">
+              Ryby
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-fish-christianity"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M22 7s-5.646 10 -12.308 10c-3.226 .025 -6.194 -1.905 -7.692 -5c1.498 -3.095 4.466 -5.025 7.692 -5c6.662 0 12.308 10 12.308 10"
+                ></path>
+              </svg>
+            </h2>
+            <div class="menu-list menu-fishes-list">
+              <div class="prices">
+                <span class="fish-title"
+                  >Filet z sandacza (150 g) z frytkami<br class="br" />
+                  i surówką</span
+                >
+                <p class="special-price">44 PLN</p>
+              </div>
+              <div class="prices">
+                <span class="fish-title">
+                  Filet z dorsza (150 g) z frytkami<br class="br" />
+                  i surówką
+                </span>
+                <p class="special-price">44 PLN</p>
+              </div>
+              <div class="prices">
+                <span class="fish-title">
+                  Filet z miruny (150 g) z frytkami<br class="br" />
+                  i z surówką
+                </span>
+                <p class="special-price">42 PLN</p>
+              </div>
+              <div class="prices">
+                <span class="fish-title">
+                  Pstrąg w całości (300 g) z frytkami<br class="br" />
+                  i surówką
+                </span>
+                <p class="special-price">42 PLN</p>
+              </div>
+            </div>
+          </div>
+          <div class="meat">
+            <h2 class="menu-title menu-meat-title">
+              Mięsiwo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-meat"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821"
+                ></path>
+                <path
+                  d="M5.904 18.596c2.733 2.734 5.9 4 7.07 2.829c1.172 -1.172 -.094 -4.338 -2.828 -7.071c-2.733 -2.734 -5.9 -4 -7.07 -2.829c-1.172 1.172 .094 4.338 2.828 7.071z"
+                ></path>
+                <path d="M7.5 16l1 1"></path>
+                <path
+                  d="M12.975 21.425c3.905 -3.906 4.855 -9.288 2.121 -12.021c-2.733 -2.734 -8.115 -1.784 -12.02 2.121"
+                ></path>
+              </svg>
+            </h2>
+            <div class="menu-list menu-meats-list">
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p class="food">
+                      De volaille z frytkami<br class="br" />
+                      i zestawem surówek
+                    </p>
+                    <p class="special-price">39 PLN</p>
+                  </div>
+                  <span
+                    >Kotlet z piersi kurczaka zawijany z serem i masłem
+                    (250)</span
+                  >
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p class="food">Chrupiący z MŁYNA z frytkami</p>
+                    <p class="special-price">32 PLN</p>
+                  </div>
+                  <span
+                    >Filet z kurczaka (150 g) w chrupiącej panierce
+                    <br class="br" />
+                    z sosem czosnkowym</span
+                  >
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p class="food">
+                      Kotlet schabowy z frytkami<br class="br" />
+                      i zestawem surówek
+                    </p>
+                    <p class="special-price">37 PLN</p>
+                  </div>
+                  <span>Kotlet 150g. Do wyboru frytki, ziemniaki</span>
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p class="food">
+                      Pierś z kurczaka z frytkami<br class="br" />
+                      i zestawem surówek
+                    </p>
+                    <p class="special-price">37 PLN</p>
+                  </div>
+                  <span>Kotlet 130g. Do wyboru frytki, ziemniaki</span>
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p class="food">Kurczak burger z frytkami</p>
+                    <p class="special-price">32 PLN</p>
+                  </div>
+                  <span
+                    >sałata, ogórek konserwowy, pomidor,<br class="br" />
+                    cebula czerwona, sos: majonez, ketchup,<br />zioła
+                    prowansalskie, sól, pieprz</span
+                  >
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p class="food">Rybny burger z frytkami</p>
+                    <p class="special-price">32 PLN</p>
+                  </div>
+                  <span
+                    >Sałata, pomidor, cebula, sos: majonez, <br class="br" />
+                    natka pietruszki, koper,<br class="br" />
+                    szczypior, ogórki</span
+                  >
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p class="food">Golonka SZEFA z pieczywem</p>
+                    <p class="special-price">37 PLN</p>
+                  </div>
+                  <span
+                    >Golonka (500 g) gotowana peklowana podawana z
+                    <br class="br" />
+                    musztardą i chrzanem
+                  </span>
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p>
+                      Pieczeń z karkówki z ziemniakami <br class="br" />
+                      i zestawem surówek
+                    </p>
+                    <p class="special-price">37 PLN</p>
+                  </div>
+                  <span>Pieczeń 130g</span>
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p>
+                      Kotlet mielony z ziemniakami<br class="br" />
+                      i buraczkami
+                    </p>
+                    <p class="special-price">32 PLN</p>
+                  </div>
+                  <span>Kotlet mielony 120g.</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="soups">
-          <h2 class="menu-title menu-soups-title"> Zupy <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-soup" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M4 11h16a1 1 0 0 1 1 1v.5c0 1.5 -2.517 5.573 -4 6.5v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1c-1.687 -1.054 -4 -5 -4 -6.5v-.5a1 1 0 0 1 1 -1z">
-              </path>
-              <path d="M12 4a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"></path>
-              <path d="M16 4a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"></path>
-              <path d="M8 4a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"></path>
-            </svg> </h2> <span>Nasze zupy gotujemy na wywarze jarzynowo-mięsnym</span>
-          <div class="menu-list menu-soups-list">
-            <div class="prices"> <span class="soup-price"> Pomidorowa z ryżem lub makaronem 450 ml </span>
-              <p>14 PLN</p>
-            </div>
-            <div class="prices"> <span class="soup-price"> Zupa dnia 450 ml </span>
-              <p>14 PLN</p>
-            </div>
-            <div class="prices"> <span class="soup-price"> Żurek na wędzonce 450 ml </span>
-              <p>20 PLN</p>
-            </div>
-            <div class="prices"> <span class="soup-price"> Flaki wołowe z pieczywem 450 ml </span>
-              <p>20 PLN</p>
-            </div>
-          </div>
-        </div>
-        <div class="children">
-          <h2 class="menu-title menu-children-title"> Dla najmłodszych <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-baby-carriage" width="24" height="24" viewBox="0 0 24 24"
-              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M8 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-              <path d="M18 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-              <path d="M2 5h2.5l1.632 4.897a6 6 0 0 0 5.693 4.103h2.675a5.5 5.5 0 0 0 0 -11h-.5v6"></path>
-              <path d="M6 9h14"></path>
-              <path d="M9 17l1 -3"></path>
-              <path d="M16 14l1 3"></path>
-            </svg> </h2>
-          <div class="menu-list menu-children-list">
-            <div class="prices"> <span> Pomidorówka z muszelkami (250 ml) </span>
-              <p>10 PLN</p>
-            </div>
-            </div>
-            <div class="prices"> <span> Zupa dnia (250 ml) </span>
-              <p>10 PLN</p>
-            </div>
-            <div class="prices"> <span> 4 pierogi z serem i ze słodką śmietaną </span>
-              <p>13 PLN</p>
-            </div>
-            <div class="prices"> <span> 4 pierogi owocowe ze słodką śmietaną </span>
-              <p>13 PLN</p>
-            </div>
-            <div class="prices"> <span> Pulpety drobiowe (2 szt.) w sosie<br class="br"> z ziemniakami i surówką </span>
-              <p>21 PLN</p>
-            </div>
-            <div class="prices"> <span> Kotlecik z piersi kurczaka (100 g) <br class="br"> z ziemniakami i surówką
-              </span>
-              <p>24 PLN</p>
-            </div>
-          </div>
-        </div>
-        <div class="sweet">
-          <h2 class="menu-title menu-sweet-title"> To jeszcze nie koniec... <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-bowl" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M4 8h16a1 1 0 0 1 1 1v.5c0 1.5 -2.517 5.573 -4 6.5v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1c-1.687 -1.054 -4 -5 -4 -6.5v-.5a1 1 0 0 1 1 -1z">
-              </path>
-            </svg> </h2>
-          <div class="menu-list menu-sweet-list">
-            <div class="meal-with-info">
-              <div class="stack">
-                <div class="prices">
-                  <p> Pierogi gotowane z cebulką </p>
-                  <p>26 PLN</p>
-                </div><span> Do wyboru 8 szt. pierogów z mięsem lub ukraińskich </span>
+          <div class="soups">
+            <h2 class="menu-title menu-soups-title">
+              Zupy
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-soup"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M4 11h16a1 1 0 0 1 1 1v.5c0 1.5 -2.517 5.573 -4 6.5v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1c-1.687 -1.054 -4 -5 -4 -6.5v-.5a1 1 0 0 1 1 -1z"
+                ></path>
+                <path d="M12 4a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"></path>
+                <path d="M16 4a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"></path>
+                <path d="M8 4a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"></path>
+              </svg>
+            </h2>
+            <span>Nasze zupy gotujemy na wywarze jarzynowo-mięsnym</span>
+            <div class="menu-list menu-soups-list">
+              <div class="prices">
+                <span class="soup-price">
+                  Pomidorowa z ryżem lub makaronem 450 ml
+                </span>
+                <p>14 PLN</p>
+              </div>
+              <div class="prices">
+                <span class="soup-price"> Zupa dnia 450 ml </span>
+                <p>14 PLN</p>
+              </div>
+              <div class="prices">
+                <span class="soup-price"> Żurek na wędzonce 450 ml </span>
+                <p>20 PLN</p>
+              </div>
+              <div class="prices">
+                <span class="soup-price">
+                  Flaki wołowe z pieczywem 450 ml
+                </span>
+                <p>20 PLN</p>
               </div>
             </div>
-            <div class="meal-with-info">
-              <div class="stack">
-                <div class="prices">
-                  <p> Pierogi z wody na słodko ze śmietaną </p>
-                  <p>26 PLN</p>
-                </div><span> Do wyboru 8 szt. pierogów z serem lub owocowych </span>
+          </div>
+          <div class="children">
+            <h2 class="menu-title menu-children-title">
+              Dla najmłodszych
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-baby-carriage"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M8 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                <path d="M18 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                <path
+                  d="M2 5h2.5l1.632 4.897a6 6 0 0 0 5.693 4.103h2.675a5.5 5.5 0 0 0 0 -11h-.5v6"
+                ></path>
+                <path d="M6 9h14"></path>
+                <path d="M9 17l1 -3"></path>
+                <path d="M16 14l1 3"></path>
+              </svg>
+            </h2>
+            <div class="menu-list menu-children-list">
+              <div class="prices">
+                <span> Pomidorówka z muszelkami (250 ml) </span>
+                <p>10 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Zupa dnia (250 ml) </span>
+                <p>10 PLN</p>
+              </div>
+              <div class="prices">
+                <span> 4 pierogi z serem i ze słodką śmietaną </span>
+                <p>13 PLN</p>
+              </div>
+              <div class="prices">
+                <span> 4 pierogi owocowe ze słodką śmietaną </span>
+                <p>13 PLN</p>
+              </div>
+              <div class="prices">
+                <span>
+                  Pulpety drobiowe (2 szt.) w sosie<br class="br" />
+                  z ziemniakami i surówką
+                </span>
+                <p>21 PLN</p>
+              </div>
+              <div class="prices">
+                <span>
+                  Kotlecik z piersi kurczaka (100 g) <br class="br" />
+                  z ziemniakami i surówką
+                </span>
+                <p>24 PLN</p>
               </div>
             </div>
-            <div class="prices"> <span> Naleśniki z serem i słodką śmietaną (3 szt.) </span>
-              <p>24 PLN</p>
-            </div>
-            <div class="prices"> <span> Kluski śląskie z sosem pieczeniowym (6 szt.) </span>
-              <p>22 PLN</p>
+          </div>
+          <div class="sweet">
+            <h2 class="menu-title menu-sweet-title">
+              To jeszcze nie koniec...
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bowl"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M4 8h16a1 1 0 0 1 1 1v.5c0 1.5 -2.517 5.573 -4 6.5v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1c-1.687 -1.054 -4 -5 -4 -6.5v-.5a1 1 0 0 1 1 -1z"
+                ></path>
+              </svg>
+            </h2>
+            <div class="menu-list menu-sweet-list">
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p>Pierogi gotowane z cebulką</p>
+                    <p>26 PLN</p>
+                  </div>
+                  <span>
+                    Do wyboru 8 szt. pierogów z mięsem lub ukraińskich
+                  </span>
+                </div>
+              </div>
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p>Pierogi z wody na słodko ze śmietaną</p>
+                    <p>26 PLN</p>
+                  </div>
+                  <span> Do wyboru 8 szt. pierogów z serem lub owocowych </span>
+                </div>
+              </div>
+              <div class="prices">
+                <span> Naleśniki z serem i słodką śmietaną (3 szt.) </span>
+                <p>23 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Kluski śląskie z sosem pieczeniowym (6 szt.) </span>
+                <p>22 PLN</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="additional">
-          <h2 class="menu-title menu-additional-title"> Dodatki <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-tools-kitchen-2" width="24" height="24" viewBox="0 0 24 24"
-              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3">
-              </path>
-            </svg> </h2>
-          <div class="menu-list menu-additional-list">
-            <div class="prices"> <span> Ziemniaki (200g) </span>
-              <p>11 PLN</p>
+          <div class="additional">
+            <h2 class="menu-title menu-additional-title">
+              Dodatki
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-tools-kitchen-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3"
+                ></path>
+              </svg>
+            </h2>
+            <div class="menu-list menu-additional-list">
+              <div class="prices">
+                <span> Ziemniaki (200g) </span>
+                <p>11 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Frytki (150g) </span>
+                <p>11 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Porcja pieczywa </span>
+                <p>2 PLN</p>
+              </div>
+              <!-- <div class="prices"> <span> Kapusta zasmażana </span>
+              <p>10 PLN</p>
+            </div> -->
+              <!-- <div class="prices"> <span> Surówka z kiszonej kapusty </span>
+              <p>9 PLN</p>
+            </div> -->
+              <div class="meal-with-info">
+                <div class="stack">
+                  <div class="prices">
+                    <p>Zestaw surówek</p>
+                    <p>11 PLN</p>
+                  </div>
+                  <span> Biała kapusta, buraczki, mizeria, marchewka </span>
+                </div>
+              </div>
             </div>
-            <div class="prices"> <span> Frytki (150g) </span>
-              <p>11 PLN</p>
-            </div>
-            <div class="prices"> <span> Porcja pieczywa </span>
-              <p>2 PLN</p>
-            </div>
-            <div class="meal-with-info">
-              <div class="stack">
+            <div class="after-dinner">
+              <h2 class="menu-title menu-after-title">
+                Po obiedzie
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-cakephp"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M12 11l8 2c1.361 -.545 2 -1.248 2 -2v-3.8c0 -1.765 -4.479 -3.2 -10.002 -3.2c-5.522 0 -9.998 1.435 -9.998 3.2v2.8c0 1.766 4.478 4 10 4v-3z"
+                  ></path>
+                  <path
+                    d="M12 14v3l8 2c1.362 -.547 2 -1.246 2 -2v-3c0 .754 -.638 1.453 -2 2l-8 -2z"
+                  ></path>
+                  <path
+                    d="M2 17c0 1.766 4.476 3 9.998 3l.002 -3c-5.522 0 -10 -1.734 -10 -3.5v3.5z"
+                  ></path>
+                  <path d="M2 10v4"></path>
+                  <path d="M22 10v4"></path>
+                </svg>
+              </h2>
+              <div class="menu-list menu-after-list">
                 <div class="prices">
-                  <p> Zestaw surówek </p>
-                  <p>11 PLN</p>
-                </div><span> Biała kapusta, buraczki, mizeria, marchewka </span>
+                  <span> Beza </span>
+                  <p>13 PLN</p>
+                </div>
+                <div class="prices">
+                  <span> Szarlotka </span>
+                  <p>12 PLN</p>
+                </div>
+                <div class="prices">
+                  <span> Sernik </span>
+                  <p>14 PLN</p>
+                </div>
+                <div class="prices">
+                  <span> Kawa sypana lub rozpuszczalna </span>
+                  <p>9 PLN</p>
+                </div>
+                <div class="prices">
+                  <span> Kawa z ekspresu </span>
+                  <p>12 PLN</p>
+                </div>
+                <div class="prices">
+                  <span> Herbata z cytryną </span>
+                  <p>9 PLN</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="after-dinner">
-            <h2 class="menu-title menu-after-title"> Po obiedzie <svg xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-cakephp" width="24" height="24" viewBox="0 0 24 24"
-                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M12 11l8 2c1.361 -.545 2 -1.248 2 -2v-3.8c0 -1.765 -4.479 -3.2 -10.002 -3.2c-5.522 0 -9.998 1.435 -9.998 3.2v2.8c0 1.766 4.478 4 10 4v-3z">
-                </path>
-                <path d="M12 14v3l8 2c1.362 -.547 2 -1.246 2 -2v-3c0 .754 -.638 1.453 -2 2l-8 -2z"></path>
-                <path d="M2 17c0 1.766 4.476 3 9.998 3l.002 -3c-5.522 0 -10 -1.734 -10 -3.5v3.5z"></path>
-                <path d="M2 10v4"></path>
-                <path d="M22 10v4"></path>
-              </svg> </h2>
+            <h2 class="menu-title menu-after-title">Napoje</h2>
             <div class="menu-list menu-after-list">
-              <div class="prices"> <span> Beza </span>
-                <p>13 PLN</p>
-              </div>
-              <div class="prices"> <span> Szarlotka </span>
-                <p>12 PLN</p>
-              </div>
-              <div class="prices"> <span> Sernik </span>
-                <p>14 PLN</p>
-              </div>
-              <div class="prices"> <span> Kawa sypana lub rozpuszczalna </span>
+              <div class="prices">
+                <span> CocaCola zero 0.5L </span>
                 <p>9 PLN</p>
               </div>
-              <div class="prices"> <span> Kawa z ekspresu </span>
-                <p>12 PLN</p>
+              <div class="prices">
+                <span> CocaCola Original taste 0.25l </span>
+                <p>8 PLN</p>
               </div>
-              <div class="prices"> <span> Herbata z cytryną </span>
+              <div class="prices">
+                <span> CocaCola Original taste 0.5l </span>
                 <p>9 PLN</p>
+              </div>
+              <div class="prices">
+                <span> CocaCola Original taste 0.85l </span>
+                <p>11 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Fanta Pomarańczowa 0.5L </span>
+                <p>9 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Sprite 0.5L </span>
+                <p>9 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Krople Beskidu Niegazowana/ Gaz 0.5L </span>
+                <p>5 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Krople Beskidu Niegazowana/ Gaz 1.5L </span>
+                <p>7 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Fuzetea 0.5L </span>
+                <p>9 PLN</p>
+              </div>
+              <div class="prices">
+                <span> Cappy Jab/Pom 0.33L </span>
+                <p>6 PLN</p>
               </div>
             </div>
           </div>
         </div>
         <div id="testimonials"></div>
-    </section>
-    <section class="testimonials-section">
-      <div class="testimonials-container"> <span class="subheading">Magia Gospody</span>
-        <h2 class="heading-secondary"> Galeria dań</h2>
-        <div class="testimonials">
-          <figure class="testimonial"> <img class="testimonial-review" src="./resources/img/review.webp" alt="">
-            <blockquote class="testimonial-text">"Smacznie, domowo, duuuużeeee porcje, szybka obsługa, nawet przy sporym
-              obłożeniu głodnych klientów ☺️ Pan za barem z fajnym poczuciem humoru. Polecam to miejsce i na pewno
-              kiedyś jeszcze raz odwiedzę."</blockquote>
-          </figure>
-          <figure class="testimonial"> <img class="testimonial-review" src="./resources/img/review.webp" alt="">
-            <blockquote class="testimonial-text">"Pyszne jedzenie. Przemili i pełni uśmiechu ludzie za barem"</blockquote>
-          </figure>
-          <figure class="testimonial"> <img class="testimonial-review" src="./resources/img/review.webp" alt="">
-            <blockquote class="testimonial-text">"Polecam obiady bardzo dobre duze porcje wszystkim smakowało cena
-            niewygórowana miła obsługa 😉😋"</blockquote>
-          </figure>
-          <figure class="testimonial"> <img class="testimonial-review" src="./resources/img/review.webp" alt="">
-            <blockquote class="testimonial-text">"Byliśmy równo o 13 czyli jak otwierali, wszystkie stoliki zapełniły się
-              w 5 minut. Golonka wielka i pyszna. Devolay z frytkami i surówkami też przepyszny. Wszystko świeże, na
-              jedzenie nie czekaliśmy nawet 10 minut. Dla dziecka bardzo dobra zupa pomidorowa z muszelkami. Miejsce
-              warte odwiedzenia"</blockquote>
-          </figure>
+      </section>
+      <section class="testimonials-section">
+        <div class="testimonials-container">
+          <span class="subheading">Magia Gospody</span>
+          <h2 class="heading-secondary">Galeria dań</h2>
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-review"
+                src="./resources/img/review.webp"
+                alt=""
+              />
+              <blockquote class="testimonial-text">
+                "Smacznie, domowo, duuuużeeee porcje, szybka obsługa, nawet przy
+                sporym obłożeniu głodnych klientów ☺️ Pan za barem z fajnym
+                poczuciem humoru. Polecam to miejsce i na pewno kiedyś jeszcze
+                raz odwiedzę."
+              </blockquote>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial-review"
+                src="./resources/img/review.webp"
+                alt=""
+              />
+              <blockquote class="testimonial-text">
+                "Pyszne jedzenie. Przemili i pełni uśmiechu ludzie za barem"
+              </blockquote>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial-review"
+                src="./resources/img/review.webp"
+                alt=""
+              />
+              <blockquote class="testimonial-text">
+                "Polecam obiady bardzo dobre duze porcje wszystkim smakowało
+                cena niewygórowana miła obsługa 😉😋"
+              </blockquote>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial-review"
+                src="./resources/img/review.webp"
+                alt=""
+              />
+              <blockquote class="testimonial-text">
+                "Byliśmy równo o 13 czyli jak otwierali, wszystkie stoliki
+                zapełniły się w 5 minut. Golonka wielka i pyszna. Devolay z
+                frytkami i surówkami też przepyszny. Wszystko świeże, na
+                jedzenie nie czekaliśmy nawet 10 minut. Dla dziecka bardzo dobra
+                zupa pomidorowa z muszelkami. Miejsce warte odwiedzenia"
+              </blockquote>
+            </figure>
+          </div>
         </div>
-      </div>
-      <div class="gallery">
+        <div class="gallery">
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-12.webp"
               alt="Photo of beautifully
             arranged food"
@@ -426,7 +706,7 @@
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-1.webp"
               alt="Photo of beautifully
             arranged food"
@@ -434,70 +714,70 @@
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-2.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-3.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-4.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-5.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-6.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-7.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-8.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-9.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-10.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
           </figure>
           <figure class="gallery-item">
             <img
-            tabindex="0"
+              tabindex="0"
               src="./resources/img/gallery-11.webp"
               alt="Zdjęcie pysznego jedzenia w naszej restauracji"
             />
@@ -505,97 +785,196 @@
         </div>
         <div class="popup hidden">
           <button aria-label="Zamknij popup" class="popup__close">X</button>
-            <img src="" alt="Close popup" class="popup__img">
-            <button aria-label="Poprzednie zdjęcie" class="popup__arrow popup__arrow-left"><</button>
-            <button aria-label="Następne zdjęcie" class="popup__arrow popup__arrow-right">></button>
+          <img src="" alt="Close popup" class="popup__img" />
+          <button
+            aria-label="Poprzednie zdjęcie"
+            class="popup__arrow popup__arrow-left"
+          >
+            <
+          </button>
+          <button
+            aria-label="Następne zdjęcie"
+            class="popup__arrow popup__arrow-right"
+          >
+            >
+          </button>
         </div>
-    </section>
-    <section id="contact" class="contact-section">
-      <div class="contact-container">
-        <div class="localization">
-          <div class="localization-note">
-            <h2>Jesteśmy tutaj <i class="fa-regular fa-hand-point-down"></i></h2>
-            <div class="contact">
-              <p class="info info-availability">Jesteśmy dla Was otwarci od 24.06, do 28.08 w godzinach 13:00 - 19:00
-              <p class="note"><strong>Adres:</strong> Gdańska 5, 82-103 Jantar</p>
-              <p class="note"><strong>Telefon:</strong> <a href="tel: 501232191">+48 501 232 191</a></p>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <div class="localization">
+            <div class="localization-note">
+              <h2>
+                Jesteśmy tutaj <i class="fa-regular fa-hand-point-down"></i>
+              </h2>
+              <div class="contact">
+                <p class="info info-availability">
+                  Jesteśmy dla Was otwarci od 24.06, do 28.08 w godzinach 13:00
+                  - 19:00
+                </p>
+                <p class="note">
+                  <strong>Adres:</strong> Gdańska 5, 82-103 Jantar
+                </p>
+                <p class="note">
+                  <strong>Telefon:</strong>
+                  <a href="tel: 501232191">+48 501 232 191</a>
+                </p>
+              </div>
+              <form
+                action="https://formsubmit.io/send/gospodaprzymlynie@gmail.com"
+                method="POST"
+              >
+                <label for="mail">Twój e-mail*</label>
+                <input
+                  id="mail"
+                  name="mail"
+                  type="mail"
+                  placeholder="Wpisz swój adres"
+                />
+                <label for="msg">Twoja wiadomość*</label>
+                <textarea
+                  id="msg"
+                  name="msg"
+                  rows="5"
+                  placeholder="Wpisz wiadomość"
+                ></textarea>
+                <p>
+                  Klikając "Wyślij" akceptujesz naszą
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1OcKxiJpzXk6GHRAxcCgmhivEsqM4CC9i/view"
+                    >Politykę prywatności</a
+                  >
+                </p>
+                <input value="Wyślij" type="submit" />
+              </form>
+              <input
+                name="_redirect"
+                type="hidden"
+                id="name"
+                value="gospodaprzymlynie.pl/dziekujemy.html"
+              />
             </div>
-            <form action="https://formsubmit.io/send/gospodaprzymlynie@gmail.com" method="POST"> <label for="mail">Twój
-                e-mail*</label> <input id="mail" name="mail" type="mail" placeholder="Wpisz swój adres"> <label
-                for="msg">Twoja wiadomość*</label> <textarea id="msg" name="msg" rows="5"
-                placeholder="Wpisz wiadomość"></textarea>
-              <p>Klikając "Wyślij" akceptujesz naszą <a target="_blank"
-                  href="https://drive.google.com/file/d/1OcKxiJpzXk6GHRAxcCgmhivEsqM4CC9i/view">Politykę prywatności</a>
-              </p><input value="Wyślij" type="submit">
-            </form> <input name="_redirect" type="hidden" id="name" value="gospodaprzymlynie.pl/dziekujemy.html">
+            <div class="map">
+              <iframe
+                class="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2335.071906592091!2d19.043622052988436!3d54.33364894704973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd4000ae1f799d%3A0xde2e27e9cce764c!2sGospoda%20%22PRZY%20M%C5%81YNIE%22!5e1!3m2!1spl!2spl!4v1679415694610!5m2!1spl!2spl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
-          <div class="map"> <iframe class="map-frame"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2335.071906592091!2d19.043622052988436!3d54.33364894704973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd4000ae1f799d%3A0xde2e27e9cce764c!2sGospoda%20%22PRZY%20M%C5%81YNIE%22!5e1!3m2!1spl!2spl!4v1679415694610!5m2!1spl!2spl"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+        </div>
+      </section>
+      <section id="about" class="about-section wrapper">
+        <h2 class="about-title">O nas</h2>
+        <div class="about-container">
+          <div class="about-description">
+            <p>
+              <strong>Gospoda "Przy Młynie"</strong> istnieje od 1995 roku i
+              jest jednym z najstarszych lokali gastronomicznych w Jantarze. Od
+              lat zajmuje się przygotowywaniem pysznych i domowych obiadów dla
+              tysięcy klientów, którzy w sezonie codziennie nas odwiedzają.
+            </p>
+            <p>
+              Nasz lokal to idealne miejsce dla osób, które cenią smak
+              tradycyjnych potraw przygotowywanych z najlepszych składników.
+              Szef kuchni wraz z zespołem są znani z miłości do przyrządzania
+              posiłków <strong>z największą dbałością</strong>.
+            </p>
+            <p>
+              Dzięki temu staliśmy się jednym z najbardziej rozpoznawalnych
+              miejsc w Jantarze, a także zyskaliśmy uznanie wśród klientów z
+              całego kraju.
+              <strong>Jesteśmy niezmiernie wdzięczni Wam</strong> - naszym
+              klientom, którzy wybierają nas już od ponad dwóch dekad. Dzięki
+              wam możemy kontynuować naszą pracę i spełniać oczekiwania
+              kolejnych pokoleń smakoszy.
+            </p>
+            <p>
+              <strong>Zapraszamy do naszej gospody</strong>, by spróbować
+              wyjątkowych smaków tradycyjnych dań oraz doświadczyć atmosfery,
+              która sprawi, że poczujecie się jak u siebie w domu.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#home">
+              <img
+                class="footer-logo"
+                src="./resources/img/footer-logo.png"
+                alt="Logo firmy"
+              />
+            </a>
+          </div>
+          <div class="col-md-2">
+            <h5>Linki</h5>
+            <ul class="links">
+              <li><a class="nav-link active" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#menu">Menu</a></li>
+              <li>
+                <a class="nav-link" href="#testimonials">Opinie & Galeria</a>
+              </li>
+              <li><a class="nav-link" href="#contact">Kontakt</a></li>
+              <li><a class="nav-link" href="#about">O nas</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Kwestie prawne</h5>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://mixolydian-seeder-9d5.notion.site/Polityka-Prywatnos-ci-7eeae7e46a264b2c85eafee5c64f70b3"
+                  >Polityka prywatności</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Jesteśmy tutaj:</h5>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.facebook.com/gospodaprzymlynie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/search?q=gospodaprzymlynie&oq=gospodaprzymlynie&aqs=chrome.0.69i59j46i13i175i199i512j0i13i512l2j69i60l4.1809j0j7&sourceid=chrome&ie=UTF-8"
+                  target="_blank"
+                  ><i class="fab fa-google"></i
+                ></a>
+              </li>
+            </ul>
+            <p>
+              <strong>Adres:</strong> Gdańska 5, 82-103 Jantar<br /><strong
+                >Numer:</strong
+              >
+              +48 501 232 19<br /><strong>Email:</strong>
+              gospodaprzymlynie@gmail.com
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-    <section id="about" class="about-section wrapper">
-      <h2 class="about-title">O nas</h2>
-      <div class="about-container">
-        <div class="about-description">
-          <p> <strong>Gospoda "Przy Młynie"</strong> istnieje od 1995 roku i jest jednym z najstarszych lokali
-            gastronomicznych w Jantarze. Od lat zajmuje się przygotowywaniem pysznych i domowych obiadów dla tysięcy
-            klientów, którzy w sezonie codziennie nas odwiedzają. </p>
-          <p> Nasz lokal to idealne miejsce dla osób, które cenią smak tradycyjnych potraw przygotowywanych z
-            najlepszych składników. Szef kuchni wraz z zespołem są znani z miłości do przyrządzania posiłków <strong>z
-              największą dbałością</strong>. </p>
-          <p> Dzięki temu staliśmy się jednym z najbardziej rozpoznawalnych miejsc w Jantarze, a także zyskaliśmy
-            uznanie wśród klientów z całego kraju. <strong>Jesteśmy niezmiernie wdzięczni Wam</strong> - naszym
-            klientom, którzy wybierają nas już od ponad dwóch dekad. Dzięki wam możemy kontynuować naszą pracę i
-            spełniać oczekiwania kolejnych pokoleń smakoszy. </p>
-          <p> <strong>Zapraszamy do naszej gospody</strong>, by spróbować wyjątkowych smaków tradycyjnych dań oraz
-            doświadczyć atmosfery, która sprawi, że poczujecie się jak u siebie w domu. </p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4"> <a href="#home"> <img class="footer-logo" src="./resources/img/footer-logo.png"
-              alt="Logo firmy"> </a> </div>
-        <div class="col-md-2">
-          <h5>Linki</h5>
-          <ul class="links">
-            <li><a class="nav-link active" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#menu">Menu</a></li>
-            <li><a class="nav-link" href="#testimonials">Opinie & Galeria</a></li>
-            <li><a class="nav-link" href="#contact">Kontakt</a></li>
-            <li><a class="nav-link" href="#about">O nas</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h5>Kwestie prawne</h5>
-          <ul>
-            <li><a target="_blank"
-                href="https://mixolydian-seeder-9d5.notion.site/Polityka-Prywatnos-ci-7eeae7e46a264b2c85eafee5c64f70b3">Polityka prywatności</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Jesteśmy tutaj:</h5>
-          <ul class="social-links">
-            <li><a href="https://www.facebook.com/gospodaprzymlynie" target="_blank" rel="noopener noreferrer"
-                onclick="if (/Mobi/.test(navigator.userAgent)){window.location.href='fb://page/gospodaprzymlynie'; return false;}"><i
-                  class="fab fa-facebook"></i></a> </li>
-            <li><a href="https://www.google.com/search?q=gospodaprzymlynie&oq=gospodaprzymlynie&aqs=chrome.0.69i59j46i13i175i199i512j0i13i512l2j69i60l4.1809j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><i class="fab fa-google"></i></a></li>
-          </ul>
-          <p><strong>Adres:</strong> Gdańska 5, 82-103 Jantar<br><strong>Numer:</strong> +48 501 232
-            19<br><strong>Email:</strong> gospodaprzymlynie@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
